@@ -23,14 +23,14 @@ pinMode(ledpin,OUTPUT);
   
   while(io.mqttStatus() < AIO_CONNECTED) {
     Serial.print(".");
-    delay(50000);
+    delay(10000);
   }
 
 
   led->get();
 
   // we are connected
-  Serial.println("Hi this is avinash");
+  Serial.println("Hi this is avinash  ");
   Serial.println(io.statusText());
 
 }
